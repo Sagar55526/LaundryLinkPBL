@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dashboard</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Montserrat:wght@300&family=Playfair&family=Ubuntu+Mono&family=Ubuntu:ital,wght@1,300;1,500&display=swap" rel="stylesheet">
+    <style>
+
+
+  body {
+	margin-top: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+	height: 100%;
+  }
+
+      /* Style for the card-like structure */
+      .card {
+        display: inline-block;
+        width: 250px;
+        height: 150px;
+        margin: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        border-radius: 5px;
+color: white;
+text-align: left;
+      }
+
+.card:hover{
+border-image: linear-gradient(to bottom right , #F8E8EE, #F8E8EE) 30;
+background-image: linear-gradient(to bottom right, #000000, #404258);
+}
+
+h3{
+font-size: 20px;}
+font-family: playfair;
+h2{
+font-size: 30px;
+margin-top: 4px;
+font-family: montserrat;
+}
+
+p{
+font-size: 17px;}
+
+      /* Colors for the different cards */
+      .card-1 {
+       background-image: linear-gradient(to bottom right, #404258, #000000);
+border-image: linear-gradient(to bottom right , #404258, #000000) 30;
+	border-style: double;
+border-width: 5px;
+	margin-right: 80px;
+      }
+      .card-2 {
+        background-image: linear-gradient(to bottom right, #404258, #000000);
+border-style: double;
+border-width: 5px;
+margin-right: 80px;
+border-image: linear-gradient(to bottom right , #404258, #000000) 30;
+      }
+      .card-3 {
+        background-image: linear-gradient(to bottom right, #404258, black);
+border-style: double;
+border-width: 5px;
+border-image: linear-gradient(to bottom right , #404258, #000000) 30;
+     }
+      .card-4 {
+        background-image: linear-gradient(to bottom right, #404258, #000000);
+border-style: double;
+border-width: 5px;
+margin-right: 80px;
+border-image: linear-gradient(to bottom right , #404258, #000000) 30;
+      }
+      .card-5 {
+        background-image: linear-gradient(to bottom right, #404258, #000000);
+border-style: double;
+border-width: 5px;
+margin-right: 80px;
+border-image: linear-gradient(to bottom right , #404258, #000000) 30;
+      }
+      .card-6 {
+        background-image: linear-gradient(to bottom right, #404258, #000000);
+border-style: double;
+border-width: 5px;
+border-image: linear-gradient(to bottom right , #404258, #000000) 30;
+      }
+
+      /* Style for the price table */
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th, td {
+        text-align: left;
+        padding: 8px;
+      }
+      th {
+       // background-image: linear-gradient(to bottom right, #404258, #000000);
+background-color: #404258;
+background-repeat: no-repeat;
+      }
+
+	.dashboard_bg{
+	  opacity: 0.7;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 745px;;
+z-index: -1;
+	}
+
+button{
+border-radius: 5px;
+border-style: double;
+border-width: 3px;
+border-color: #D4D925 ;
+font-size: 15px;
+height: 30px;;
+width:130px;
+background-image: linear-gradient(to bottom right , white, #FAC213);
+}
+
+button:hover{
+background-image: linear-gradient(to bottom right, #FAC213, white);
+border-radius: 10px; 
+}
+
+
+    </style>
+  </head>
+  <body>
+<img src="dash_bg_img.jpg" alt="laundry_bg" class="dashboard_bg">
+    <h2>Dashboard</h2>
+    <center><div>
+    <!-- Laundry Request Card -->
+    <div class="card card-1">
+      <h3>Laundry Request</h3>
+      <p>Book a new laundry request</p>
+      <a href="laundry_request.php"><button>Book now</button></a>
+    </div>
+
+    <!-- Laundry Request Card -->
+    <div class="card card-2">
+      <h3>View Request</h3>
+      <p>view your request here</p>
+      <a href="view_request.php"><button>view now</button></a>
+    </div>
+
+    <!-- Notification Card -->
+    <div class="card card-3">
+      <h3>Notification</h3>
+      <p>View notifications and updates</p>
+      <a href="notification.php"><button>View now</button></a>
+    </div>
+</div>
+
+<div>
+
+    <!-- Change Password Card -->
+    <div class="card card-4">
+      <h3>Change Password</h3>
+      <p>Update your account password</p>
+      <a href="forgot_password.php"><button>Change now</button></a>
+    </div>
+
+    <!-- Logout Card -->
+    <div class="card card-5">
+      <h3>Logout</h3>
+      <p>Logout from your account</p>
+      <a href="logout.php"><button>Logout now</button></a>
+    </div>
+
+ 	<!-- feedback -->
+     <div class="card card-6">
+      <h3>Feedback</h3>
+      <p>Give your feedback</p>
+      <a href="feedback.html"><button>feedback form</button></a>
+    </div>
+</div></center>
+    <br>
+
+    <!-- Price Table -->
+    <h3><b>Price List</b></h3>
+    <table>
+      <tr>
+        <th>Service</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td><b>Wash and Fold</b></td>
+        <td><em>₹7.0</em></td>
+      </tr>
+      <tr>
+        <td><b>Wash and Iron</b></td>
+        <td><em>₹10.0</em></td>
+      </tr>
+      <tr>
+        <td><b>Dry Clean</b></td>
+        <td><em>₹20.0</em></td>
+      </tr>
+
+    </table>
+
+    <br>
+
+    <!-- Footer -->
+    <footer>
+      
+    </footer>
+  </body>
+</html>
